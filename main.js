@@ -199,12 +199,73 @@
 
 // console.log("Mảng: ",b);
 
-let a = {
-    ten:"Dương Quốc Nam",
-    lop:"BootCamp01"
-}
+// let a = {
+//     ten:"Dương Quốc Nam",
+//     lop:"BootCamp01"
+// }
 
 
-let b = {...a,tuoi:20}
+// let b = {...a,tuoi:20}
 
-console.log("Object: ",b);
+// console.log("Object: ",b);
+
+//==============================Default Parameter==========================
+// Cho phép set giá trị mặc định của tham số (parameter) của hàm nếu như không có đối số (argument) truyền vào
+
+// function tinhTong(a=10,b=12){
+//     console.log("Tổng là: ",a+b);
+//     return a+b;
+// }
+
+// tinhTong(10,100);
+
+// function getInfo(ten="Nam", Lop=" 18DTHB2"){
+//     console.log("Tên sinh viên: ",ten + " Lớp: ",Lop)
+// }
+
+// getInfo();
+
+//==============================FOR_IN==========================
+// Duyệt mảng theo index
+
+// const mangSinhVien = ["Nam","Thao","Nguyen","Vy"]
+// const mangDiem = [10,6,5,2]
+// function duyetMang(){
+//     for(let property in mangSinhVien){
+//         console.log(`${property}: ${mangSinhVien[property]}`);
+//         console.log(mangSinhVien[property]);
+//     }
+// }
+
+// function duyetMangDiem(){
+//     for(let index in mangDiem){
+//         let max = Math.max.apply(index,mangDiem);
+//             console.log("Điểm max: ", max);
+//         let min = Math.min.apply(index,mangDiem);
+//             console.log("Điểm min: ", min);
+//     }
+
+// }
+//  duyetMangDiem();
+
+//==============================FOR_OF==========================
+// Duyệt mảng đối tượng [{}]
+
+
+// const mangSinhVien = [
+//   { ten: "Nam", lop: "18DTHB2" },
+//   { ten: "Khai", lop: "18DTHB1" },
+//   { ten: "Tan", lop: "18DTHB4" },
+// ];
+
+// function getInfo(){
+//     for (const index of mangSinhVien) {
+//        let nameUpdate = index.ten
+//        if(nameUpdate === "Nam"){ 
+//            index.ten = "Nữ";
+//             console.log(mangSinhVien);
+//        }
+//     }
+// }
+
+// getInfo();
